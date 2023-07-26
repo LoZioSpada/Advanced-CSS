@@ -8,6 +8,9 @@ window.onload = function(){
             event.preventDefault()
             // event.target.closest('.col-md-6').remove();
             event.target.closest('.col-md-6').style.visibility = "hidden";
+            if(event.target.closest('.col-md-6').style.visibility == "hidden"){
+                event.target.closest('.col-md-6').remove();
+            }
         }
     }
 
