@@ -6,7 +6,8 @@ window.onload = function(){
     for(let link of document.querySelectorAll('.stretched-link')){
         link.onclick = function(event){
             event.preventDefault()
-            event.target.closest('.col-md-6').remove();
+            // event.target.closest('.col-md-6').remove();
+            event.target.closest('.col-md-6').style.visibility = "hidden";
         }
     }
 
